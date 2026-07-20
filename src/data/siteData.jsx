@@ -1,31 +1,76 @@
 import React from 'react'
 
-const Icon = () => <span className="miniIcon" aria-hidden="true">✦</span>
+const Icon = ({ children = '✦' }) => <span className="miniIcon" aria-hidden="true">{children}</span>
+
+export const ecosystemNodes = ['Website', 'AI Chatbot', 'CRM', 'WhatsApp', 'AI Voice Agent', 'Calendar', 'Customer']
+
+export const workflowSteps = [
+  'Visitor',
+  'Website',
+  'AI Chatbot',
+  'Lead Captured',
+  'CRM',
+  'AI Voice Call',
+  'Appointment',
+  'Calendar',
+  'Follow-Up'
+]
 
 export const services = [
-  ['AI Chatbots', 'AI assistants that answer common questions, capture customer information and help qualify potential leads.', Icon],
-  ['WhatsApp Automation', 'Automate customer communication, follow-ups, reminders and approved WhatsApp messaging workflows.', Icon],
-  ['AI Voice Agents', 'AI-powered voice systems designed for customer conversations, lead qualification, follow-ups and appointment scheduling.', Icon],
-  ['Lead Management & CRM Automation', 'Automatically organize leads, update customer information and track each opportunity through the business process.', Icon],
-  ['Appointment Automation', 'Connect customer conversations with scheduling systems to streamline appointment booking and reminders.', Icon],
-  ['Workflow Automation', 'Connect business applications and automate repetitive processes across your operations.', Icon],
-  ['AI Customer Support', 'Build intelligent systems that help businesses respond to common customer questions efficiently.', Icon],
-  ['Custom AI Automation', 'Custom automation systems designed around the specific workflow and requirements of each business.', Icon]
+  ['AI Chatbots', 'Always-on assistants that answer questions, qualify visitors and capture contact details before leads go cold.', '✦'],
+  ['WhatsApp Automation', 'Structured WhatsApp journeys for inquiry handling, reminders, reactivation campaigns and follow-up sequences.', '◈'],
+  ['AI Voice Agents', 'Voice agents for lead qualification, missed-call recovery, confirmations and appointment scheduling workflows.', '◎'],
+  ['Lead & CRM Automation', 'Automatically organize new inquiries, update deal stages and route every opportunity into a clear sales process.', '▣'],
+  ['Appointment Automation', 'Connect conversations to booking flows, calendars, confirmations and reminder automations that reduce no-shows.', '◌'],
+  ['Workflow Automation', 'Eliminate repetitive admin by connecting forms, spreadsheets, CRMs, messaging tools, calendars and internal tasks.', '⌁'],
+  ['AI Customer Support', 'Deploy AI support systems that provide consistent answers while escalating important conversations to your team.', '◇'],
+  ['Custom AI Systems', 'Build complete AI-powered business systems around your exact customer journey, data and operating model.', '✺']
 ]
+
+export const problems = [
+  ['Missed leads', 'New inquiries get buried in inboxes, DMs and forms before the team can respond.'],
+  ['Slow responses', 'Customers choose competitors when answers, pricing or availability take too long.'],
+  ['Manual follow-ups', 'Staff spend hours repeating the same reminders, messages and status updates.'],
+  ['Missed appointments', 'Bookings fall through when scheduling, confirmations and reminders are disconnected.'],
+  ['Repetitive admin', 'Teams copy customer details between tools instead of focusing on service delivery.'],
+  ['Lost opportunities', 'Leads disappear because there is no connected system tracking every next step.']
+]
+
+export const processSteps = [
+  ['Understand Your Business', 'We analyze your current workflow and identify automation opportunities.'],
+  ['Build Your AI System', 'We connect AI agents, automation workflows, CRM systems and communication channels.'],
+  ['Integrate Everything', 'We connect your website, WhatsApp, AI calling, CRM and calendar.'],
+  ['Automate & Scale', 'Your system automatically handles leads, conversations, follow-ups and appointments.']
+]
+
 export const industries = [
-  ['Gyms & Fitness Centers', 'Automate new membership enquiries, lead follow-ups, trial session booking and customer communication.', Icon],
-  ['Clinics', 'Coordinate enquiries, appointment requests, reminders and general customer communication workflows.', Icon],
-  ['Salons', 'Streamline booking requests, service enquiries, reminders and repeat-customer follow-ups.', Icon],
-  ['Restaurants', 'Handle common enquiries, booking requests, event leads and customer follow-up messaging.', Icon],
-  ['Real Estate', 'Capture property enquiries, qualify potential buyers and automate follow-up communication.', Icon],
-  ['Professional Services', 'Organize inbound enquiries, consultations, document requests and relationship follow-ups.', Icon],
-  ['Local Service Businesses', 'Respond faster to enquiries, schedule visits and keep customer information organized.', Icon]
+  ['Gyms & Fitness Centers', 'Automate trial inquiries, class questions, membership follow-ups and consultation bookings.', '🏋'],
+  ['Clinics', 'Coordinate patient inquiries, appointment requests, reminders and front-desk communication workflows.', '✚'],
+  ['Salons', 'Streamline service questions, booking requests, reminders and repeat-customer reactivation.', '✂'],
+  ['Restaurants', 'Handle booking requests, event leads, menu questions and customer follow-up messages.', '◍'],
+  ['Real Estate', 'Capture property inquiries, qualify buyers or tenants and trigger fast follow-up sequences.', '⌂'],
+  ['Service Businesses', 'Respond to quote requests, schedule visits and keep every customer conversation organized.', '⚙']
 ]
-export const processSteps = ['Understand Your Business|We study your current workflow, repetitive tasks and customer journey.', 'Design Your Automation|We design an automation architecture tailored to your business.', 'Build & Integrate|We connect the required AI tools, communication channels, CRM and business systems.', 'Test|We test the complete workflow from customer interaction to final automation.', 'Deploy|The system is deployed into your business operations.', 'Optimize|The automation can be improved as your business requirements evolve.']
-export const why = [
-  ['Complete Systems', 'We focus on connecting the complete workflow instead of automating one isolated task.', Icon],
-  ['Built Around Your Business', 'Every business operates differently. Automation should fit your workflow.', Icon],
-  ['AI + Automation', 'Combine intelligent customer interactions with reliable workflow automation.', Icon],
-  ['Scalable Architecture', 'Systems can evolve as your business processes and requirements grow.', Icon],
-  ['Integration Focused', 'Connect your existing tools and business processes whenever possible.', Icon]
+
+export const trustPillars = [
+  ['Custom automation systems', 'Designed around your real workflow instead of forcing a one-size-fits-all template.'],
+  ['Secure integrations', 'Built with practical data handling, scoped platform access and no frontend API keys.'],
+  ['Reliable workflows', 'Clear triggers, fallbacks and testing paths help each automation run predictably.'],
+  ['Human-centered AI', 'AI supports your team while important interactions can still be reviewed or escalated.'],
+  ['Scalable architecture', 'Systems can start focused and expand across more channels as your operations grow.'],
+  ['Ongoing optimization', 'Automations can be measured, refined and improved as your business learns what works.']
 ]
+
+export const integrations = ['WhatsApp', 'Google Calendar', 'Google Sheets', 'CRM Systems', 'AI Voice Systems', 'Website Chatbots', 'Automation Workflows', 'APIs']
+
+export const gymDemo = [
+  'New visitor submits inquiry',
+  'Lead automatically enters CRM',
+  'AI assistant qualifies lead',
+  'AI voice agent follows up',
+  'Customer selects appointment',
+  'Calendar booking created',
+  'Automated reminders sent'
+]
+
+export { Icon }
