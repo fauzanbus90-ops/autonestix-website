@@ -1,3 +1,5 @@
+import React from 'react'
+
 const Icon = () => <span className="miniIcon" aria-hidden="true">✦</span>
 
 export const services = [
